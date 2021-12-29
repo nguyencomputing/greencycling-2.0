@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="A website for recycling and collecting scraps" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>RECYCLER | GREENCYCLING</title>
+
+		
+
+		<link rel="modulepreload" href="/bundle/start-5b015dd7.js">
+		<link rel="modulepreload" href="/bundle/chunks/vendor-58e50b8c.js">
+		<link rel="modulepreload" href="/bundle/pages/__layout.svelte-0bd32955.js">
+		<link rel="modulepreload" href="/bundle/pages/seller/__layout.svelte-7e8ae353.js">
+		<link rel="modulepreload" href="/bundle/chunks/store-d922d222.js">
+		<link rel="modulepreload" href="/bundle/pages/seller/index.svelte-fd5bb480.js">
+		<link rel="stylesheet" href="/bundle/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/bundle/assets/pages/__layout.svelte-91a02093.css">
+		<link rel="stylesheet" href="/bundle/assets/pages/seller/__layout.svelte-a88b7548.css">
+
+		<script type="module">
+			import { start } from "/bundle/start-5b015dd7.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/bundle/pages/__layout.svelte-0bd32955.js"),
+						import("/bundle/pages/seller/__layout.svelte-7e8ae353.js"),
+						import("/bundle/pages/seller/index.svelte-fd5bb480.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fseller",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+<nav class="fixed bg-white flex h-min justify-between md:justify-start md:flex-col md:h-screen md:w-96 w-screen"><div class="box svelte-1dcla2j"><p class="text-2xl font-medium md:mt-6 md:mb-6"></p>
+</div>
+    <div class="flex justify-center items-center overflow-hidden"><img src="/img/logo.png" alt="Greencycling" width="96" height="96" class="circular_image svelte-9q28bc">
+        <a sveltekit:prefetch href="/" class="md:text-2xl font-semibold mx-4 md:p-6 md:mb-2">GREENCYCLING</a></div>
+
+    <div class="flex md:flex-col md:space-y-4"><a sveltekit:prefetch href="/" class="p-4 md:mx-6 md:rounded-md hover:bg-green-400">HOME</a>
+        <a sveltekit:prefetch href="/seller" class="p-4 md:mx-6 md:rounded-md hover:bg-green-400 svelte-9q28bc active">SUMMARY</a>
+        <a sveltekit:prefetch href="/seller/bin-locations" class="p-4 md:rounded-md md:mx-6 hover:bg-green-400 svelte-9q28bc">BIN LOCATIONS</a>
+        <a sveltekit:prefetch href="/seller/exchange" class="p-4 md:rounded-md md:mx-6 hover:bg-green-400 svelte-9q28bc">EXCHANGE</a><a sveltekit:prefetch href="/seller/bin-navigation" class="p-4 md:rounded-md md:mx-6 hover:bg-green-400 svelte-9q28bc">BIN NAVIGATION</a></div></nav>
+<div class="bg-gray-200 min-h-screen h-full md:ml-96 px-10 md:py-10 py-24"><div><div class="flex md:flex-row flex-col md:space-x-10 overflow-auto scroll"><h1 class="w-fit text-2xl font-bold mt-10 p-7 bg-white text-6xl">Welcome back, </h1>
+    <div class="p-7 w-fit bg-white mx-auto flex flex-col mt-10"><img src="/img/qr_img.png" alt="QR code to connect" width="96" height="96"></div></div>
+<h1 class="text-2xl font-bold mt-10">Your account summary</h1>
+<div class="flex md:flex-row flex-col justify-center md:space-x-10 overflow-auto scroll mt-6"><div class="text-center inline-block p-4 w-40 rounded-md bg-green-600 hover:bg-green-800 text-white shadow-cyan-600 hover:shadow-cyan-800">Today</div>
+    <div class="text-center inline-block p-4 w-40 rounded-md bg-green-600 hover:bg-green-800 text-white shadow-cyan-600 hover:shadow-cyan-800">This Week</div>
+    <div class="text-center inline-block p-4 w-40 rounded-md bg-green-600 hover:bg-green-800 text-white shadow-cyan-600 hover:shadow-cyan-800">This Month</div>
+    <div class="text-center inline-block p-4 w-40 rounded-md bg-green-600 hover:bg-green-800 text-white shadow-cyan-600 hover:shadow-cyan-800">This year</div>
+    <div class="text-center inline-block p-4 w-40 rounded-md bg-green-600 hover:bg-green-800 text-white shadow-cyan-600 hover:shadow-cyan-800">All time</div></div>
+<div class="flex md:flex-row flex-col md:space-x-10 overflow-auto scroll"><div class="flex md:flex-col flex-row items-center bg-white rounded-xl p-8 auto md:w-64 md:h-56 md:mt-16 mt-4 flex-shrink-0 space-x-4 md:space-x-0"><div class="rounded-xl w-24 h-24 md:mx-auto p-7 bg-blue-800 hover:bg-sky-400 md:-mt-20"><img src="/img/icons/award-solid.svg" alt="logo for Points"></div>
+    <div class="flex md:flex-col items-center justify-between flex-grow md:flex-grow-0"><p class="text-2xl font-medium md:mt-12">Points</p></div></div>
+
+<div class="m-0 fixed inset-0 flex justify-center items-center z-10 rounded-2xl hidden"><div class="fixed inset-0 bg-black bg-opacity-80"></div>
+    <div class="bg-white z-20 p-7 w-5/12 rounded-xl"><h3 class="text-2xl font-medium">Points</h3>
+        <div class="flex space-x-3 justify-center mt-3 items-center text-2xl font-medium"><h1>Today:</h1>
+            <div>0</div></div></div></div>
+    <div class="flex md:flex-col flex-row items-center bg-white rounded-xl p-8 auto md:w-64 md:h-56 md:mt-16 mt-4 flex-shrink-0 space-x-4 md:space-x-0"><div class="rounded-xl w-24 h-24 md:mx-auto p-7 bg-blue-800 hover:bg-sky-400 md:-mt-20"><img src="/img/icons/trash-solid.svg" alt="logo for Recycled"></div>
+    <div class="flex md:flex-col items-center justify-between flex-grow md:flex-grow-0"><p class="text-2xl font-medium md:mt-12">Recycled</p></div></div>
+
+<div class="m-0 fixed inset-0 flex justify-center items-center z-10 rounded-2xl hidden"><div class="fixed inset-0 bg-black bg-opacity-80"></div>
+    <div class="bg-white z-20 p-7 w-5/12 rounded-xl"><h3 class="text-2xl font-medium">Recycled</h3>
+        <div class="flex space-x-3 justify-center mt-3 items-center text-2xl font-medium"><h1>Today:</h1>
+            <div>0 KG</div></div></div></div>
+    <div class="flex md:flex-col flex-row items-center bg-white rounded-xl p-8 auto md:w-64 md:h-56 md:mt-16 mt-4 flex-shrink-0 space-x-4 md:space-x-0"><div class="rounded-xl w-24 h-24 md:mx-auto p-7 bg-blue-800 hover:bg-sky-400 md:-mt-20"><img src="/img/icons/redeem-solid.svg" alt="logo for Redeemed"></div>
+    <div class="flex md:flex-col items-center justify-between flex-grow md:flex-grow-0"><p class="text-2xl font-medium md:mt-12">Redeemed</p></div></div>
+
+<div class="m-0 fixed inset-0 flex justify-center items-center z-10 rounded-2xl hidden"><div class="fixed inset-0 bg-black bg-opacity-80"></div>
+    <div class="bg-white z-20 p-7 w-5/12 rounded-xl"><h3 class="text-2xl font-medium">Redeemed</h3>
+        <div class="flex space-x-3 justify-center mt-3 items-center text-2xl font-medium"><h1>Today:</h1>
+            <div>0 VND</div></div></div></div>
+    <div class="flex md:flex-col flex-row items-center bg-white rounded-xl p-8 auto md:w-64 md:h-56 md:mt-16 mt-4 flex-shrink-0 space-x-4 md:space-x-0"><div class="rounded-xl w-24 h-24 md:mx-auto p-7 bg-blue-800 hover:bg-sky-400 md:-mt-20"><img src="/img/icons/heart-solid.svg" alt="logo for Donated"></div>
+    <div class="flex md:flex-col items-center justify-between flex-grow md:flex-grow-0"><p class="text-2xl font-medium md:mt-12">Donated</p></div></div>
+
+<div class="m-0 fixed inset-0 flex justify-center items-center z-10 rounded-2xl hidden"><div class="fixed inset-0 bg-black bg-opacity-80"></div>
+    <div class="bg-white z-20 p-7 w-5/12 rounded-xl"><h3 class="text-2xl font-medium">Donated</h3>
+        <div class="flex space-x-3 justify-center mt-3 items-center text-2xl font-medium"><h1>Today:</h1>
+            <div>0 VND</div></div></div></div></div>
+
+<h1 class="text-2xl font-bold mt-10">Recycling History</h1>
+
+<div class="mt-4 h-56 rounded-xl bg-white p-7"><canvas height="224px"></canvas></div>
+<h1 class="text-2xl font-bold mt-10">Activity log</h1>
+<div class="space-y-10 rounded-xl mt-4 px-11 relative" style="max-width: 1144px;"><div class="bg-gray-400 w-3 rounded-2xl absolute inset-y-0 left-14"></div>
+    <div class="flex items-center space-x-7"><div class="w-9 h-9 bg-green-900 rounded-full relative"></div>
+    <div class="h-24 bg-white flex-grow rounded-lg flex justify-between items-center px-5"><p class="text-2xl font-medium">Donated 50,000 VND to Change Vietnam</p>
+        <p>3 days ago</p></div></div>
+    <div class="flex items-center space-x-7"><div class="w-9 h-9 bg-green-900 rounded-full relative"></div>
+    <div class="h-24 bg-white flex-grow rounded-lg flex justify-between items-center px-5"><p class="text-2xl font-medium">Redeemed 100,000 VND</p>
+        <p>5 days ago</p></div></div>
+    <div class="flex items-center space-x-7"><div class="w-9 h-9 bg-green-900 rounded-full relative"></div>
+    <div class="h-24 bg-white flex-grow rounded-lg flex justify-between items-center px-5"><p class="text-2xl font-medium">Donated 300,000 VND to WWF</p>
+        <p>10 days ago</p></div></div></div></div>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>

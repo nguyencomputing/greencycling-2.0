@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="A website for recycling and collecting scraps" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>RECYCLER | GREENCYCLING</title>
+
+		
+
+		<link rel="modulepreload" href="/bundle/start-5b015dd7.js">
+		<link rel="modulepreload" href="/bundle/chunks/vendor-58e50b8c.js">
+		<link rel="modulepreload" href="/bundle/pages/__layout.svelte-0bd32955.js">
+		<link rel="modulepreload" href="/bundle/pages/seller/__layout.svelte-7e8ae353.js">
+		<link rel="modulepreload" href="/bundle/chunks/store-d922d222.js">
+		<link rel="modulepreload" href="/bundle/pages/seller/bin-navigation.svelte-f76e27bb.js">
+		<link rel="stylesheet" href="/bundle/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/bundle/assets/pages/__layout.svelte-91a02093.css">
+		<link rel="stylesheet" href="/bundle/assets/pages/seller/__layout.svelte-a88b7548.css">
+
+		<script type="module">
+			import { start } from "/bundle/start-5b015dd7.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/bundle/pages/__layout.svelte-0bd32955.js"),
+						import("/bundle/pages/seller/__layout.svelte-7e8ae353.js"),
+						import("/bundle/pages/seller/bin-navigation.svelte-f76e27bb.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fseller\u002Fbin-navigation",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+<nav class="fixed bg-white flex h-min justify-between md:justify-start md:flex-col md:h-screen md:w-96 w-screen"><div class="box svelte-1dcla2j"><p class="text-2xl font-medium md:mt-6 md:mb-6"></p>
+</div>
+    <div class="flex justify-center items-center overflow-hidden"><img src="/img/logo.png" alt="Greencycling" width="96" height="96" class="circular_image svelte-9q28bc">
+        <a sveltekit:prefetch href="/" class="md:text-2xl font-semibold mx-4 md:p-6 md:mb-2">GREENCYCLING</a></div>
+
+    <div class="flex md:flex-col md:space-y-4"><a sveltekit:prefetch href="/" class="p-4 md:mx-6 md:rounded-md hover:bg-green-400">HOME</a>
+        <a sveltekit:prefetch href="/seller" class="p-4 md:mx-6 md:rounded-md hover:bg-green-400 svelte-9q28bc">SUMMARY</a>
+        <a sveltekit:prefetch href="/seller/bin-locations" class="p-4 md:rounded-md md:mx-6 hover:bg-green-400 svelte-9q28bc">BIN LOCATIONS</a>
+        <a sveltekit:prefetch href="/seller/exchange" class="p-4 md:rounded-md md:mx-6 hover:bg-green-400 svelte-9q28bc">EXCHANGE</a><a sveltekit:prefetch href="/seller/bin-navigation" class="p-4 md:rounded-md md:mx-6 hover:bg-green-400 svelte-9q28bc active">BIN NAVIGATION</a></div></nav>
+<div class="bg-gray-200 min-h-screen h-full md:ml-96 px-10 md:py-10 py-24"><iframe src="/poster.pdf" width="100%" height="700px" title="Bin Navigation" frameborder="0"></iframe>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>
