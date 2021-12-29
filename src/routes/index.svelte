@@ -24,7 +24,7 @@
         {
             loggedin = true;
             isLogin.set(true);
-        } 
+        }
         else alert("Wrong username or password");
         loginmenu = false;
     }
@@ -85,11 +85,7 @@
 
 <div class="h-screen relative">
     <div class="absolute inset-8 bottom-8 top-24 overflow-hidden">
-        <img
-            src="/img/background.jpeg"
-            alt="background"
-            class="h-full object-cover mx-auto rounded-2xl"
-        />
+      <video autoplay muted loop id="myVideo" src="video2.mp4" type="video/mp4" class="h-full object-cover mx-auto rounded-2xl"> </video>
         <div class="absolute flex justify-center items-center inset-0">
             <div
                 class="p-10 bg-white bg-opacity-40 backdrop-blur-xl rounded-xl flex flex-col items-center"
@@ -101,7 +97,7 @@
                     class:hidden={loggedin}
                 >
                     <a class="btn" href="#about">About us</a>
-                    
+
                     <div class="btn btn-pink" on:click={() => (loginmenu = true)}>Get started</div>
                 </div>
             </div>
@@ -141,9 +137,9 @@
             <div class=" text text-right font-semibold mb-5" on:click={() => {forgetmenu = true; loginmenu = false}}><u>Forgot your password</u></div>
             <div class="flex items-center justify-between mb-7 space-x-7" on:click={() => {signupmenu = true; loginmenu = false}}><u>Don't have an account? Click here</u></div>
             <button type="submit" class="btn float-right">Login</button>
-           
+
         </form>
-        
+
     </div>
 </div>
 <div
@@ -173,9 +169,9 @@
                 />
             </div>
             <button type="submit" class="btn float-right">Reset</button>
-           
+
         </form>
-        
+
     </div>
 </div>
 
@@ -230,7 +226,7 @@
                     I accept the terms and conditions
                 </label>
             </div>
-            
+
             <button disabled={!yes} type="submit" class="btn float-right">Login</button>
         </form>
     </div>
