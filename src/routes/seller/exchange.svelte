@@ -1,5 +1,6 @@
 <script>
     import {point} from "/src/routes/seller/store.js"
+    import swal from 'sweetalert';
     let orgs = ["Red Cross", "Change Vietnam", "WWF", "Oxfam", "Unicef", "V", "B", "C", "D"];
     let coupons = ["Tiki", "Shopee", "KFC","A", "V", "B", "C", "D"]
     let val = 0;
@@ -13,16 +14,16 @@
        return x.toLocaleString()
     }
     function donate(org) {
-        
+
         return () =>
         {
             $point -= val;
             val &&
-            alert(`You donated ${convert(val  * 10)} VND to ${org} with ${convert(val)} point`);
+            swal("You donated " + convert(val/1000*0.44) + " USD to " + org + "with " + convert(val) + " point", "", "success");
             if(val) val = 0;
             if(valredeem) valredeem = 0;
         }
-           
+
     }
 
     function redeem(org) {
@@ -30,25 +31,25 @@
         {
             $point -= valredeem;
             valredeem &&
-            alert(`You redeemed a ${convert(valredeem * 10)} VND ${org} coupon with ${convert(valredeem)} point`);
+            swal("You redeemed a " + convert(valredeem/1000*0.39) + " USD " + org + "coupon with " + convert(valredeem) + " point", "", "success");
             if(valredeem) valredeem = 0;
             if(val) val = 0;
         }
-            
+
     }
 </script>
 
 <div class="w-fit">
     <h1 class="w-fit mx-auto text-center p-7 bg-white  text-6xl">{convert(globalval)} Points</h1>
     <h1 class="text-2xl font-bold mt-10"> <u><a href="/seller/exchange-help/"> How does the exchange system work? </a></u></h1>
-    
+
     <div class="flex flex-wrap w-fit">
-        
+
         <div class = "main-container">
             <h1 class="flex-grow mx-10 mt-10 text-center font-semibold text-2xl bg-white text-4xl">Donate</h1>
             <div class="flex-grow mx-10 mt-10 makeScroll">
-                
-                
+
+
                 <div class="bg-white md:mx-0 p-7 justify-between">
                     <h2 class="text-center text-xl">{convert(val)}</h2>
                     <input
@@ -56,9 +57,10 @@
                         min="0"
                         max={globalval}
                         bind:value={val}
+                        step=1000
                         class="w-full min-w-[20rem] mb-5"
                     />
-                    
+
                     <div>
                         {#each orgs as org}
                             <div
@@ -80,7 +82,7 @@
         <div class = "main-container">
          <h1 class="flex-grow mx-10 mt-10 text-center font-semibold text-2xl bg-white text-4xl">Redeem</h1>
         <div class="flex-grow mx-10 mt-10 flex flex-col makeScroll">
-            
+
             <div class="bg-white mx-auto md:mx-0 p-7 flex-grow flex flex-col justify-between">
                 <div class="w-full">
                     <h2 class="text-center text-xl">{convert(valredeem)}</h2>
@@ -89,6 +91,7 @@
                         min="0"
                         max={globalval}
                         bind:value={valredeem}
+                        step=1000
                         class="w-full mb-5 min-w-[20rem] "
                     />
                 </div>
@@ -102,11 +105,7 @@
                     {
                         $point -= valredeem;
                         valredeem &&
-                        alert(
-                            `You redeemed ${convert(valredeem)} points for ${
-                                convert(valredeem * 9)
-                            } VND`
-                        );
+                        swal("You redeemed " + convert(valredeem) + " points for " + convert(valredeem/1000*0.39) + " USD ", "", "success");
                         if(valredeem) valredeem = 0;
                         if(val) val = 0;
                     }
@@ -128,7 +127,7 @@
                         </div>
                     {/each}
                 </div>
-                
+
                 </div>
             </div>
         </div>
