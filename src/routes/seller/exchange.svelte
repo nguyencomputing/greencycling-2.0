@@ -1,8 +1,8 @@
 <script>
     import {point} from "/src/routes/seller/store.js"
     import swal from 'sweetalert';
-    let orgs = ["Red Cross", "Change Vietnam", "WWF", "Oxfam", "Unicef", "V", "B", "C", "D"];
-    let coupons = ["Tiki", "Shopee", "KFC","A", "V", "B", "C", "D"]
+    let orgs = ["Red Cross", "Change Vietnam", "WWF", "Oxfam", "Unicef", "A", "B", "C", "D"];
+    let coupons = ["Tiki", "Shopee", "KFC","A", "B", "C", "D"]
     let val = 0;
     let valredeem = 0;
     let globalval = 0;
